@@ -1,0 +1,17 @@
+Lets say we have parent class and there are a 3 child classes of it , to be more precise lets say the parent class name is VEHICLE
+and this class contains one property as drive() , and the name of child's are lets say OffRoadVehicle , SportVehicle ,
+PassengerVehicle.
+
+Now lets assume the drive() function inside the parent(Vehicle) class is a basic drive functionality , and as we know
+child's extends the functionality of parent class so as of our requirement lets say the PassengerVehicle normally extends
+the drive() functionality of VEHICLE  but the OffRoadVehicle and SportVehicle classes needs some special kind of drive
+functionality
+
+Here is catch , I have a question for you, How you will achieve those special kind of functionality? the straight forward
+answer is you will override the drive() function and write the special kind of drive functionality, but here if a i ask
+you what if that special kind of drive() functionality
+is same for both OffRoadVehicle and SportVehicle ? is that code duplicating ? if we add another kind of vehicle that
+also require that same special kind of functionality then can you think the code is again duplicating ?
+i.e. we are writing the same code again and again.
+
+to solve this issue, The strategy pattern comes into the scene.
